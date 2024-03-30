@@ -16,35 +16,9 @@ const drawLine = (context, x, y, length, angle, color = '#ffffff') => {
 };
 
 export default class Scenario extends Scene {
-    // constructor(id, timezoneOffset = 0) {
-    //     super(id);
-
-    //     this.mainRadius = 0;
-    //     this.deltaRadius = 0;
-    //     this.arcs = [];
-    //     this.timezoneOffset = timezoneOffset; // Timezone offset in hours
-
-    //     this.params = {
-    //         'line-width': 2,
-    //         speed: 1,
-    //         color: "#ffffff",
-    //         'is-update': true
-    //     };
-
-    //     this.nArcs = 3;
-
-    //     if (this.debug.active) {
-    //         this.debugFolder.add(this.params, 'line-width', 1, 10).onChange(() => this.drawUpdate());
-    //         this.debugFolder.add(this.params, 'speed', -2, 2, 0.25);
-    //         this.debugFolder.addColor(this.params, 'color');
-    //     }
-
-    //     this.resize();
-    // }
     constructor(id, timezoneOffset = 0) {
         super(id);
 
-        // Initial setup
         this.mainRadius = 0;
         this.deltaRadius = 0;
         this.arcs = [];
