@@ -9,10 +9,12 @@
 </head>
 
 <body>
+    <h1>🕰 TimeZone 🕰</h1>
+    <p>Scroll ⬇️</p>
     <div class="container">
-        <h1>🕰 TimeZone 🕰</h1>
 
-        <canvas id="canvas-scene" class="scene"></canvas>
+
+        <!-- <canvas id="canvas-scene" class="scene"></canvas> -->
         <canvas id='canvasIdNewYork' class="scene"></canvas>
         <canvas id='canvasIdLondon' class="scene"></canvas>
         <canvas id="canvasIdTokyo" class="scene"></canvas>
@@ -34,9 +36,21 @@
         font-size: 1.5rem;
     }
 
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: white;
+        line-height: 1.4em;
+        font-size: 1.5rem;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         gap: 1px;
     }
